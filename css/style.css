@@ -109,6 +109,156 @@ li {
   color: black;
   height: 100vh;
 }
+.animationImg {
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.animate {
+  width: 100%;
+  height: 100%;
+}
+
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height based on your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: absolute;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.5s ease-in-out;
+}
+
+#box1 {
+  background-color: yellow;
+  width: 150px;
+  height: 100px;
+  z-index: 2;
+  opacity: 1; /* Always visible */
+  animation: none; /* No animation for the yellow box */
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+#box2 {
+  background-color: pink;
+  width: 50px;
+  height: 150px;
+  top: -200px; /* Start outside the viewport */
+  z-index: 3;
+  animation: dropDown 2s ease-in-out infinite 1s;
+}
+.handtop {
+  width: 100%;
+  height: 100%;
+}
+
+#box3 {
+  background-color: lightgreen;
+  width: 150px;
+  height: 50px;
+  right: -200px; /* Start outside the viewport */
+  z-index: 1;
+  animation: slideInRight 2s ease-in-out infinite 3s;
+}
+.handRight {
+  width: 100%;
+  height: 100%;
+}
+
+#box4 {
+  background-color: skyblue;
+  width: 200px;
+  height: 100px;
+  bottom: -200px; /* Start outside the viewport */
+  z-index: 0;
+  animation: slideUp 2s ease-in-out infinite 5s;
+}
+.handBottom {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes dropDown {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    right: -200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* Disappear boxes 2, 3, 4 after they reach their position */
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Trigger disappear animation */
+#box2 {
+  animation: dropDown 2s ease-in-out forwards 1s,
+    disappear 1s ease-in-out forwards 7s;
+}
+
+#box3 {
+  animation: slideInRight 2s ease-in-out forwards 3s,
+    disappear 1s ease-in-out forwards 7s;
+}
+
+#box4 {
+  animation: slideUp 2s ease-in-out forwards 5s,
+    disappear 1s ease-in-out forwards 7s;
+}
 
 /*---------------------------------------------- Hero Section */
 /* .hero-section {

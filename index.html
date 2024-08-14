@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!----Navbar Section-->
+    <!----Navbar Section------------------------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <a href="" class="navbar-brand"><img src="img/logo.png" /></a>
@@ -51,7 +51,7 @@
         </div>
     </nav>
 
-    <!-- New Hero Section start -------------------------------------------->
+    <!--  Hero Section start -------------------------------------------->
 
     <section class="hero-section d-flex">
         <div class="container">
@@ -76,50 +76,31 @@
                     </div>
                 </div>
                 <div class="col-md-6 right-col">
-                    <h1>Animation part</h1>
+                    <!-- Was facing some issue with animation so used img instead, working on that  -->
+                    <div class="animationImg">
+                        <img class="animate" src="./img/animationImg.png" />
+                    </div>
+                    <!-- <div class="animation-container">
+                        <div class="box yellow" id="box1">
+                            <img class="main" src="./img/div102.png" />
+                        </div>
+                        <div class="box pink" id="box2">
+                            <img class="handtop" src="./img/handTop.png" />
+                        </div>
+                        <div class="box green" id="box3">
+                            <img class="handRight" src="./img/handRight.png" />
+                        </div>
+                        <div class="box blue" id="box4">
+                            <img class="handBottom" src="./img/handBottom.png" />
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- New Hero Section ends -------------------------------------------->
 
-    <!-- Hero Section Starts ---------------------------------------------------------------->
-    <!-- 
-        <section class="hero-section">
-            <div class="container">
-                <div class="row">
-                    <div class=" heroLeft">
-                        <div class="left">
-                            <div class="taglineBox">
-                                <h1>
-                                    Bridging
-                                    <span class="highlight-text"><img src="./img/IdeasTxt.png" alt="Ideas" /></span><br />
-                                    With design.
-                                </h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat.
-                                </p>
-    
-                                <div class="text-center">
-                                    <button class="text-uppercase contactBtn" data-bs-toggle="tooltip"
-                                        data-bs-title="Contact us">
-                                        Get in touch
-                                    </button>
-                                </div>
-    
-                            </div>
-    
-                        </div>
-                    </div>
-        <div class="col-12 col-md-12 col-lg-6 heroRight">
-        </div>
-        </div>
-        </div>
-        </section> -->
-    <!-- Hero Section Ends ------------------------------------------------------------------->
+
+    <!-- New Hero Section ends -------------------------------------------->
 
     <!-- Why Us Section Starts ----------------------------------------------------------------->
 
@@ -247,6 +228,7 @@
     </section>
 
     <!-- Why Us Section Ends ----------------------------------------------------------------->
+
     <!-- Service Section Starts  ------------------------------------------------------------->
 
     <section class="container serviceSection">
@@ -578,10 +560,10 @@
 
             <!-- Carousel controls -->
             <div class="carousel-controls">
-                <button class="btn  me-2" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+                <button class="btn me-2" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
                     <img src="./img/arrowLeft.png" alt="Left" class="arrow-icon" />
                 </button>
-                <button class="btn  ms-2" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+                <button class="btn ms-2" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
                     <img src="./img/arrowRight.png" alt="Right" class="arrow-icon" />
                 </button>
             </div>
@@ -597,20 +579,21 @@
             <div class="row formBox">
                 <!-- Contact Form -->
                 <div class="col-md-7">
-                    <div class=" getInTouch p-4">
+                    <div class="getInTouch p-4">
                         <h4 class="mb-4">Let's Get In Touch!</h4>
                         <form>
                             <div class="mb-3">
                                 <!-- <label for="name" class="form-label">Name</label> -->
-                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                <input type="text" class="form-control" id="name" placeholder="Name" />
                             </div>
                             <div class="mb-3">
                                 <!-- <label for="email" class="form-label">Email Address</label> -->
-                                <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address" />
                             </div>
                             <div class="mb-3">
                                 <!-- <label for="contact-number" class="form-label">Contact Number</label> -->
-                                <input type="tel" class="form-control" id="contact-number" placeholder="Contact Number">
+                                <input type="tel" class="form-control" id="contact-number"
+                                    placeholder="Contact Number" />
                             </div>
                             <div class="mb-3">
                                 <!-- <label for="service" class="form-label">Select Service</label> -->
@@ -627,14 +610,12 @@
                             </div>
                             <button type="submit" class="btn submitBtn">Submit</button>
                         </form>
-
                     </div>
-
                 </div>
 
                 <!-- Contact Information -->
                 <div class="col-md-5">
-                    <div class=" contactInfo p-4">
+                    <div class="contactInfo p-4">
                         <h5 class="mb-4 infoTitle">Contact Information</h5>
                         <ul class="list-unstyled infoDiv">
                             <li class="mb-2">
@@ -653,8 +634,8 @@
                                 <i class="bi bi-envelope-fill"></i> support@digihost.in
                             </li>
                             <li class="mb-2">
-                                <i class="bi bi-geo-alt-fill"></i> A-105, Greenscape Technocity, Mahape, Navi Mumbai -
-                                400701
+                                <i class="bi bi-geo-alt-fill"></i> A-105, Greenscape
+                                Technocity, Mahape, Navi Mumbai - 400701
                             </li>
                         </ul>
                     </div>
@@ -666,19 +647,16 @@
                 <div class="col text-center">
                     <h5 class="mb-4">Follow Us</h5>
                     <div class="d-flex justify-content-center">
-                        <img src="./img/fb.png" alt="Facebook" class="mx-2">
-                        <img src="./img/ig.png" alt="Instagram" class="mx-2">
-                        <img src="./img/wa.png" alt="WhatsApp" class="mx-2">
-                        <img src="./img/in.png" alt="LinkedIn" class="mx-2">
-                        <img src="./img/x.png" alt="Twitter" class="mx-2">
+                        <img src="./img/fb.png" alt="Facebook" class="mx-2" />
+                        <img src="./img/ig.png" alt="Instagram" class="mx-2" />
+                        <img src="./img/wa.png" alt="WhatsApp" class="mx-2" />
+                        <img src="./img/in.png" alt="LinkedIn" class="mx-2" />
+                        <img src="./img/x.png" alt="Twitter" class="mx-2" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
