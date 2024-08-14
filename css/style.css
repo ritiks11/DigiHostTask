@@ -367,7 +367,6 @@ li {
 .serviceSection {
   /* background-color: violet; */
   margin-top: 5rem;
-  border: 2px solid red;
 }
 .left-section {
   padding: 20px;
@@ -745,4 +744,149 @@ li {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+/* ----------------------------Contact Us --------------------------------*/
+.ContactTitleBox {
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: -30px 30px 0px 0px #000;
+  width: fit-content;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+}
+.ContactTitleBox::after {
+  content: "";
+  position: absolute;
+  bottom: -31px;
+  left: -15px;
+  width: 300px;
+  height: 30px;
+  background-color: #000;
+  z-index: -1;
+  transform: skewX(-45deg);
+}
+.ContactTitleBox::before {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  left: -16px;
+  width: 300px;
+  height: 30px;
+  background-color: #000;
+  z-index: -1;
+  transform: skewX(-45deg);
+}
+.contactTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50.83px;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: var(--dark-green-color);
+  margin: 0;
+  text-align: center;
+}
+
+.getInTouch {
+  background: #1b2a2f;
+  color: var(--white-color);
+  padding: 2rem 15rem 8rem 2rem !important;
+  position: relative;
+  border: 1px solid black;
+}
+
+.getInTouch {
+  --size: 50px;
+  --m: 0.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+
+  mask: radial-gradient(
+        var(--R) at 50% calc(100% - (var(--size) + var(--p))),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, #000 101%)
+      50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+}
+
+.submitBtn {
+  background: linear-gradient(90deg, #1b776f 0%, #1b776f 100%);
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 5px 20px;
+  border: 2px solid #fff;
+  margin-top: 15px;
+}
+.formBox {
+  margin-top: 5rem;
+}
+
+.contactInfo {
+  /* background-color: yellow; */
+  padding: 0 5rem 0 0 !important;
+  position: absolute;
+  margin-top: 8rem;
+  margin-left: -8rem;
+}
+
+.contactInfo {
+  --size: 50px;
+  --m: 0.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+
+  mask: radial-gradient(
+        var(--R) at 50% calc(100% - (var(--size) + var(--p))),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, #000 101%)
+      50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+}
+.infoTitle {
+  background-color: var(--white-color);
+  border-radius: 50px;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 1rem 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--dark-green-color);
+  text-transform: uppercase;
+}
+.infoDiv {
+  background: #1b776f;
+  color: var(--white-color);
+  padding: 2rem;
+  width: 400px;
+  height: 500px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  border: 1px solid black;
+}
+
+.contactInfo li {
+  margin-top: 15px;
+}
+
+.followUsBox {
+  margin-top: 10rem !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
 }
